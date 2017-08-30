@@ -12,7 +12,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  for (int pos = 0; pos <= 360; pos += 1) {
+  for (int pos = 0; pos <= 180; pos += 1) {
     motor1.write(pos);
     motor2.write(pos);  
   }
