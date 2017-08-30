@@ -1,0 +1,11 @@
+#####XE401 AGV REQUIREMENTS#####
+
+##FUNCTIONAL##
+#DETECT WALLS
+  - real walls: PING on servo
+  - fake walls: 
+#AVOID OBSTACLES
+
+#LOCATE OPEN DARK ROOM
+
+#NAVIGATE TO LIGHT
