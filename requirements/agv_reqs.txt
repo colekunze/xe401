@@ -3,7 +3,7 @@
 ##FUNCTIONAL##
 #DETECT WALLS
   - real walls: PING on servo
-  - fake walls: 
+  - fake walls: Infared 
 #AVOID OBSTACLES
 
 #LOCATE OPEN DARK ROOM
