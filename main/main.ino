@@ -17,8 +17,6 @@ int rotateDelay(int deg) {
 
 //movementDelay()
 //moveForward()
-//databaseExists()
-//initializeDB()
 //handleDetect()
 //checkTrigger()
 //obstacleHandle()
@@ -29,8 +27,11 @@ int rotateDelay(int deg) {
 
 
 void setup() {
-  //attach motor1
-  //attach motor2
+  //setup motor servos
+  motor1.attach(10);
+  motor2.attach(13);
+
+  //setup sensors
   //setup ping1
   //setup ping2
   //setup ping3
@@ -41,18 +42,20 @@ void setup() {
   bool db = false;
   byte flag = B11111111;
   if(check == flag) { db = true;}
-  else {EEPROM.write(addr,B11111111);} //start writing to eeprom
+  else {EEPROM.write(addr,B11111111);} //write init flag (int 255) to eeprom)
   addr += 1;
 }
 
 void loop() {
-  //initialize trigger var
-  //while(!trigger):
+  bool trigger = false;
+  //while(!trigger) {
     //moveForward
     //trigger = checkTrigger()
   //handleDetect()
   //if(goalState):
     //stop
+    //switch eeprom flag to B00000000
+  //}
 }
 
 
