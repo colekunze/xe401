@@ -26,3 +26,6 @@ void setup() {
  motor1.detach();
  motor2.detach();
 }
+
+void loop() {}
+
