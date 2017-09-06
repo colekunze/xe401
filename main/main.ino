@@ -3,6 +3,8 @@
 //globals
 Servo motor1;
 Servo motor2;
+int addr = 0; //EEPROM init address
+byte check; //EEPROM first byte check
 
 //FUNCTIONS:
 //<rotateDelay>
@@ -34,10 +36,13 @@ void setup() {
   //setup ping3
   //setup photoresistor
   //setup infared
-  //if(!databaseExists):
-    //initializeDB
-  //else setupDB
   
+  //check if data has been written
+  bool db = false;
+  byte flag = B11111111;
+  if(check == flag) { db = true;}
+  else {EEPROM.write(addr,B11111111);} //start writing to eeprom
+  addr += 1;
 }
 
 void loop() {
@@ -50,3 +55,8 @@ void loop() {
     //stop
 }
 
+
+/*EEPROM refs
+https://www.arduino.cc/en/Reference/EEPROM -> usage
+https://arduino.stackexchange.com/questions/11941/how-to-remember-variable-values-after-rebooting-an-arduino-uno-r3-board -> discovering EEPROM
+*/
