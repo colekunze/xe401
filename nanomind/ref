@@ -1,0 +1,6 @@
+#COMMAND#	#USAGE#
+gyro			retrieve data from the gyroscope (orientation)
+mag				retrieve data from the magnetometer (compass)
+ping			pings nodes over the I2C bus
+com				prefix to open command tree for interfacing with the NanoCom
+hub				prefix to open command tree for interfacing with the NanoMind

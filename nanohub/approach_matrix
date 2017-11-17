@@ -1,0 +1,12 @@
+INTERFACE WITH NANOHUB GOSH
+	- Connect to the serial debug port [DONE]
+		- build a 3 pin cable to connect via USB [DONE]
+		- test wiring layout and rewire as necessary
+	- Connect the NanoMind and NanoCom with the NanoHub
+		- attempt to ping the other two devices from the NanoHub
+		- attempt to ping the NanoHub from the NanoCom and NanoMind via the GOSH
+	- Check the requirements for NanoPower
+	- Connect NanoPower to the bus
+		- using USB, write a packet to the NanoMind
+		- transmit afformentioned packet with NanoCom and Antenna
+			- alternatively, use NanoCom comdebug to transmit packets as soon as it is powered on

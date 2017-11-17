@@ -1,0 +1,4 @@
+#COMMAND#		#USAGE#
+comdebug		prefix for interfacing with the debugging features, such as setting transmit properties and transmitting packets
+ping				ping nodes over the I2C bus
+cmp					CSP management protocol
